@@ -29,11 +29,7 @@ private final Pattern NUM_REGX = Pattern.compile("[0-9]+");
 	@Value("${integration.wsys.root}")
 	String wsysRoot;
 	
-	
-	@Value("${integration.wres.root}")
-	String wresRoot;
-	
-	
+		
 	@Value("${integration.wdev.root}")
 	String wdevRoot;
 	
@@ -113,17 +109,7 @@ private final Pattern NUM_REGX = Pattern.compile("[0-9]+");
 	}
 	
 	
-	
-	@RequestMapping("/integration/wres")
-	public String forward2Wres(HttpServletRequest request, HttpServletResponse response, String fwr) {
-		BinaryUtils.checkEmpty(fwr, "fwr");
-		fwr = ControllerUtils.formatContextPath(fwr);
-		String url = this.wresRoot + fwr;
-		request.setAttribute("integration_url", url);
-		return "forward:/layout/jsp/integration.jsp";
-	}
-	
-	
+		
 	
 	@RequestMapping("/integration/wdev")
 	public String forward2Wdev(HttpServletRequest request, HttpServletResponse response, String fwr) {
