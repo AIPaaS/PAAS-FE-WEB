@@ -4,7 +4,7 @@
 </div>
 
 <footer id="footer-bar" class="row">
-<p id="footer-copyright" class="col-xs-12">
+<p id="footer-copyright" class="col-xs-12">© 2016 版权所有 亚信集团股份有限公司 京ICP备11005544号-15 京公网安备110108007119号
 </p>
 </footer>
 
