@@ -31,7 +31,7 @@ public class AuthorityMvc {
 	
 	/**
 	 * 验证是否登录
-	 * @param request
+	 * @param request 
 	 * @param response
 	 */
 	@RequestMapping("/verifyLogin")
